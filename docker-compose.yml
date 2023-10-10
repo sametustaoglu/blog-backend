@@ -1,0 +1,22 @@
+version: '3.7'
+
+services:
+  api:
+    build: .
+    restart: always
+    image: sametustaoglu/blog-backend:v1.0
+    platform: linux/amd64
+    command: >
+      bash -c "python /Backend/manage.py makemigrations &&
+       python /Backend/manage.py migrate &&
+        echo yes | python /Backend/manage.py collectstatic &&
+         python /Backend/manage.py runserver 0.0.0.0:8000"
+    environment:
+      DB_HOST : 'db'
+      DB_NAME : 'sametustaoglu.com'
+      DB_USER : 'samet'
+      DB_PASS : 'sametustaoglu.com'
+    ports:
+      - "8000:8000"
+    volumes:
+      - .:/app/
