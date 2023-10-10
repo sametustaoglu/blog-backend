@@ -41,12 +41,12 @@ CORS_ALLOWED_ORIGINS = [
     'https://54.86.112.189:8000',
     'http://54.86.112.189:3000',
     'http://54.86.112.189:3000',
-    'http://api.beratuyanik.com',
-    'https://api.beratuyanik.com',
-    'http://beratuyanik.com',
-    'https://beratuyanik.com',
-    'http://www.beratuyanik.com',
-    'https://www.beratuyanik.com'
+    'http://api.sametustaoglu.com',
+    'https://api.sametustaoglu.com',
+    'http://sametustaoglu.com',
+    'https://sametustaoglu.com',
+    'http://www.sametustaoglu.com',
+    'https://www.sametustaoglu.com'
 ]
 
 GRAPHENE = {
@@ -141,15 +141,15 @@ SUMMERNOTE_THEME = 'bs4'
 
 
 JAZZMIN_SETTINGS = {
-    "site_title": "Berat UYANIK Admin Panel",
-    "site_header": "Berat UYANIK ",
-    "site_brand": "Berat UYANIK",
+    "site_title": "Samet USTAOGLU Admin Panel",
+    "site_header": "Samet USTAOGLU ",
+    "site_brand": "Samet USTAOGLU",
     "site_icon": "images/favicon.png",
     # Add your own branding here
     "site_logo": None,
-    "welcome_sign": "Welcome to Berat UYANIK",
+    "welcome_sign": "Welcome to Samet USTAOGLU",
     # Copyright on the footer
-    "copyright": "Berat UYANIK",
+    "copyright": "Samet USTAOGLU",
     "user_avatar": None,
     ############
     # Top Menu #
@@ -159,7 +159,7 @@ JAZZMIN_SETTINGS = {
         # Url that gets reversed (Permissions can be added)
         {"name": "Home", "url": "home", "permissions": ["auth.view_user"]},
         # model admin to link to (Permissions checked against model)
-        {'name': 'Support', 'url': 'https://beratuyanik.com',
+        {'name': 'Support', 'url': 'https://sametustaoglu.com',
             'new_window': True},
 
 
